@@ -11,7 +11,7 @@ st.set_page_config(layout = 'wide')
 
 
 # import dataset 
-df = pd.read_csv('data/tppo_tenggelam.csv', sep = ';')
+df = pd.read_csv('D:/dataset_capstonproject/tppo/tppo_tenggelam.csv', sep = ';')
 
 
 
@@ -31,16 +31,16 @@ folium.map.Marker(
     icon=DivIcon(
         icon_size=(650,200),
         icon_anchor=(0,0),
-        html='<h3 style="font-family:Georgia Pro Regular;color:silver;">Tercatat</h3><br>'
+        html='<h5 style="font-family:Georgia Pro Regular;color:silver;">Tercatat</h5><br>'
         )
     ).add_to(my_map)
 folium.map.Marker(
-    [4.623068, 103.644171],
+    [5.523068, 103.644171],
     icon=DivIcon(
         icon_size=(650,200),
         icon_anchor=(0,0),
         html=
-            '''<p style="color:crimson;font-size:100px;font-family:Georgia Pro Regular;">566</p>'''
+            '''<p style="color:crimson;font-size:70px;font-family:Georgia Pro Regular;">566</p>'''
         )
     ).add_to(my_map)
 folium.map.Marker(
@@ -49,42 +49,42 @@ folium.map.Marker(
         icon_size=(650,200),
         icon_anchor=(0,0),
         html=
-            '<h3 style="font-family:Georgia Pro Regular;color:silver;">PMI meninggal</h3>'
+            '<h5 style="font-family:Georgia Pro Regular;color:silver;">PMI meninggal</h5>'
         )
     ).add_to(my_map)
 
 folium.map.Marker(
-    [7.933068, 85.644171],
+    [7.333068, 86.844171],
     icon=DivIcon(
-        icon_size=(500,200),
+        icon_size=(450,200),
         icon_anchor=(0,0),
         html='<h3 style="font-family:Georgia Pro Regular">Kematian Pekerja Migran Ilegal Indonesia di Selat Malaka : Segitiga Bermudanya PMI</h3>'
         )
     ).add_to(my_map)
 
 folium.map.Marker(
-    [6.033068, 85.644171],
+    [5.533068, 86.844171],
     icon=DivIcon(
-        icon_size=(500,200),
+        icon_size=(380,200),
         icon_anchor=(0,0),
         html=
-                '''<h style="font-family:Georgia Pro Regular;font-size:9px;">
+                '''<p style="font-family:Georgia Pro Regular;font-size:10px;">
                 Imigrasi Pekerja Migran Indonesia (PMI) yang ilegal ke wilayah negara Malaysia dan Singapura
                 ataupun sebaliknya lewat jalur laut, kerap kali mengalami insiden tenggelamnya kapal akibat 
                 ketidaklayakan kapal dan menempuh jalur perairan berbahaya demi menghindari petugas.
-                </h><br>'''
+                </p><br>'''
         )
     ).add_to(my_map)
 
 
 folium.map.Marker(
-    [4.533068, 85.644171],
+    [4.033068, 86.844171],
     icon=DivIcon(
-        icon_size=(500,200),
+        icon_size=(380,200),
         icon_anchor=(0,0),
         html=
 
-                '''<h7 style="font-family:Georgia Pro Regular">Visualisasi ini menunjukkan semua insiden
+                '''<p style="font-family:Georgia Pro Regular;font-size:10px;">Visualisasi ini menunjukkan semua insiden
                 tenggelamnya kapal pengangkut pekerja migran Indonesia mulai dari Januari 2009 hingga Oktober 2022.
                 Ukuran lingkaran berwarna merah menunjukkan seberapa besar jumlah korban meninggal akibat insiden tersebut.
                 Arahkan kursor pada lingkaran dan klik untuk mengetahui informasi lengkap mengenai setiap insiden.
@@ -92,22 +92,22 @@ folium.map.Marker(
                 didata lokasi rinci perairan dan ditentukan wilayah perairan besarnya.
                 Berdasarkan pendataan terdapat dua wilayah perairan yang umumnya terjadi kecelakaan,  
                 yaitu perairan Selat Malaka dan Laut Natuna yang telah diproyeksikan melalui pembatas segitiga bergaris putih.
-                </h7><br>'''
+                </p><br>'''
         )
     ).add_to(my_map)
 folium.map.Marker(
-    [0.593068, 85.644171],
+    [0.373068, 86.844171],
     icon=DivIcon(
-        icon_size=(500,200),
+        icon_size=(300,200),
         icon_anchor=(0,0),
         html=
 
-                '''<h11 style="font-family:Georgia Pro Regular;color:silver;">
+                '''<p style="font-family:Georgia Pro Regular;color:silver;font-size:7px;">
                 Metodologi : <br>                                                                            
                 Data dikumpulkan dari sampel berita publik yang berbasis di Indonesia (Januari 2009-Oktober 2022),
                 melalui proses ekstraksi dengan teknik web scraping. Untuk menjaga akurasi, data 
                 dicocokkan kembali pada laman berita secara manual.
-                </h11><br>'''
+                </p><br>'''
         )
     ).add_to(my_map)
 
