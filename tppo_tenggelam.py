@@ -195,4 +195,4 @@ for lat, lon, death, posisi, alive, sumber, cause, tgl in zip(df['lat'], df['lon
                   fill=True).add_to(my_map)
 
     
-st_folium(my_map, width=1800, height=800)
+st_folium(my_map, width=1200, height=400)
