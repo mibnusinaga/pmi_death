@@ -11,17 +11,12 @@ st.set_page_config(layout = 'wide')
 
 
 # import dataset 
-df = pd.read_csv('data/tppo_tenggelam.csv', sep = ';')
+df = pd.read_csv('D:/dataset_capstonproject/tppo/tppo_tenggelam.csv', sep = ';')
 
 
 
-
-#fig=Figure(height=850,width=1000)
-#fig.header.add_child(Element("<style>body {background-color: #00ffff}</style>"))
-#fig.html.add_child(Element("<h1>Hello world</h1>"))
 
 #create folium object
-#To create Terrain map
 
 my_map = folium.Map(
     location=[3.1651958, 97.8204231],
@@ -29,15 +24,7 @@ my_map = folium.Map(
     tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', 
     attr='Esri.WorldImagery', 
 )
-#fig.add_child(my_map)
-folium.map.Marker(
-    [6.933068, 88.644171],
-    icon=DivIcon(
-        icon_size=(650,200),
-        icon_anchor=(0,0),
-        html='<h1 style="font-family:Georgia Pro Regular">Kematian Pekerja Migran Ilegal Indonesia di Selat Malaka : Segitiga Bermudanya PMI</h1>'
-        )
-    ).add_to(my_map)
+
 
 folium.map.Marker(
     [4.733068, 103.644171],
@@ -66,30 +53,38 @@ folium.map.Marker(
         )
     ).add_to(my_map)
 
+folium.map.Marker(
+    [7.933068, 85.644171],
+    icon=DivIcon(
+        icon_size=(500,200),
+        icon_anchor=(0,0),
+        html='<h3 style="font-family:Georgia Pro Regular">Kematian Pekerja Migran Ilegal Indonesia di Selat Malaka : Segitiga Bermudanya PMI</h3>'
+        )
+    ).add_to(my_map)
 
 folium.map.Marker(
-    [5.633068, 88.644171],
+    [6.033068, 85.644171],
     icon=DivIcon(
-        icon_size=(600,200),
+        icon_size=(500,200),
         icon_anchor=(0,0),
         html=
-                '''<h4 style="font-family:Georgia Pro Regular">
+                '''<h style="font-family:Georgia Pro Regular;font-size:9px;">
                 Imigrasi Pekerja Migran Indonesia (PMI) yang ilegal ke wilayah negara Malaysia dan Singapura
                 ataupun sebaliknya lewat jalur laut, kerap kali mengalami insiden tenggelamnya kapal akibat 
                 ketidaklayakan kapal dan menempuh jalur perairan berbahaya demi menghindari petugas.
-                </h4><br>'''
+                </h><br>'''
         )
     ).add_to(my_map)
 
 
 folium.map.Marker(
-    [4.533068, 88.644171],
+    [4.533068, 85.644171],
     icon=DivIcon(
-        icon_size=(600,200),
+        icon_size=(500,200),
         icon_anchor=(0,0),
         html=
 
-                '''<h4 style="font-family:Georgia Pro Regular">Visualisasi ini menunjukkan semua insiden
+                '''<h7 style="font-family:Georgia Pro Regular">Visualisasi ini menunjukkan semua insiden
                 tenggelamnya kapal pengangkut pekerja migran Indonesia mulai dari Januari 2009 hingga Oktober 2022.
                 Ukuran lingkaran berwarna merah menunjukkan seberapa besar jumlah korban meninggal akibat insiden tersebut.
                 Arahkan kursor pada lingkaran dan klik untuk mengetahui informasi lengkap mengenai setiap insiden.
@@ -97,26 +92,22 @@ folium.map.Marker(
                 didata lokasi rinci perairan dan ditentukan wilayah perairan besarnya.
                 Berdasarkan pendataan terdapat dua wilayah perairan yang umumnya terjadi kecelakaan,  
                 yaitu perairan Selat Malaka dan Laut Natuna yang telah diproyeksikan melalui pembatas segitiga bergaris putih.
-                </h4><br>'''
+                </h7><br>'''
         )
     ).add_to(my_map)
 folium.map.Marker(
-    [0.593068, 88.644171],
+    [0.593068, 85.644171],
     icon=DivIcon(
-        icon_size=(400,200),
+        icon_size=(500,200),
         icon_anchor=(0,0),
         html=
 
-                '''<p style="font-family:Georgia Pro Regular;color:silver;">
+                '''<h11 style="font-family:Georgia Pro Regular;color:silver;">
                 Metodologi : <br>                                                                            
                 Data dikumpulkan dari sampel berita publik yang berbasis di Indonesia (Januari 2009-Oktober 2022),
                 melalui proses ekstraksi dengan teknik web scraping. Untuk menjaga akurasi, data 
                 dicocokkan kembali pada laman berita secara manual.
-                Laporan berita bersumber dari metroterkini.com, detik.com, liputan6.com, bbc.com,
-                okezone.com, kompas.com, solopos.com, tempo.com,
-                batamtoday.com, vica.co.id, antaranews.com, asumsi.co.id,
-                merdeka.com, koranntb.com dan jpnn.com
-                </p><br>'''
+                </h11><br>'''
         )
     ).add_to(my_map)
 
@@ -195,4 +186,4 @@ for lat, lon, death, posisi, alive, sumber, cause, tgl in zip(df['lat'], df['lon
                   fill=True).add_to(my_map)
 
     
-st_folium(my_map, width=1200, height=400)
+st_folium(my_map, width=1200, height=450)
