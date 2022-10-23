@@ -19,7 +19,7 @@ df = pd.read_csv('data/tppo_tenggelam.csv', sep = ';')
 #create folium object
 
 my_map = folium.Map(
-    location=[3.1651958, 120.8204231],
+    location=[3.1651958, 93.8204231],
     zoom_start=6,
     tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', 
     attr='Esri.WorldImagery', 
