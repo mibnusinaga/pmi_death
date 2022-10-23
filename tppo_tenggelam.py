@@ -3,8 +3,6 @@ import pandas as pd
 import numpy as np
 import folium
 from folium import FeatureGroup, LayerControl, Map, Marker
-# from branca.element import *
-# display folium map
 from  streamlit_folium import folium_static, st_folium
 import streamlit as st
 from folium.features import DivIcon
@@ -27,7 +25,7 @@ df = pd.read_csv('data/tppo_tenggelam.csv', sep = ';')
 
 my_map = folium.Map(
     location=[3.1651958, 97.8204231],
-    zoom_start=7.4,
+    zoom_start=5,
     zoom_end=5,
     tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', 
     attr='Esri.WorldImagery', 
