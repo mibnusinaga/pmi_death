@@ -11,7 +11,7 @@ st.set_page_config(layout = 'wide')
 
 
 # import dataset 
-df = pd.read_csv('data/tppo_tenggelam.csv', sep = ';')
+df = pd.read_csv('D:/dataset_capstonproject/tppo/tppo_tenggelam.csv', sep = ';')
 
 
 
@@ -27,7 +27,7 @@ my_map = folium.Map(
 
 
 folium.map.Marker(
-    [4.733068, 103.644171],
+    [5.533068, 103.644171],
     icon=DivIcon(
         icon_size=(650,200),
         icon_anchor=(0,0),
@@ -44,7 +44,7 @@ folium.map.Marker(
         )
     ).add_to(my_map)
 folium.map.Marker(
-    [3.533068, 103.644171],
+    [3.933068, 103.644171],
     icon=DivIcon(
         icon_size=(650,200),
         icon_anchor=(0,0),
@@ -61,6 +61,42 @@ folium.map.Marker(
         html='<h3 style="font-family:Georgia Pro Regular">Kematian Pekerja Migran Ilegal Indonesia di Selat Malaka : Segitiga Bermudanya PMI</h3>'
         )
     ).add_to(my_map)
+
+folium.map.Marker(
+    [7.433068, 105.844171],
+    icon=DivIcon(
+        icon_size=(380,200),
+        icon_anchor=(0,0),
+        html=
+                '''<p style="font-family:Georgia Pro Regular;color:silver;font-size:9px;">
+                Oleh : M Ibnu Sinaga
+                </p><br>'''
+        )
+    ).add_to(my_map)
+folium.map.Marker(
+    [7.233068, 105.544171],
+    icon=DivIcon(
+        icon_size=(380,200),
+        icon_anchor=(0,0),
+        html=
+                '''<p style="font-family:Georgia Pro Regular;color:silver;font-size:9px;">
+                mibnusinaga@gmail.com
+                </p><br>'''
+        )
+    ).add_to(my_map)
+folium.map.Marker(
+    [7.000008, 105.744171],
+    icon=DivIcon(
+        icon_size=(380,200),
+        icon_anchor=(0,0),
+        html=
+                '''<p style="font-family:Georgia Pro Regular;color:silver;font-size:9px;">
+                mibnusinaga (linkedin)
+                </p><br>'''
+        )
+    ).add_to(my_map)
+
+
 
 folium.map.Marker(
     [5.533068, 86.844171],
@@ -112,11 +148,11 @@ folium.map.Marker(
     ).add_to(my_map)
 
 folium.map.Marker(
-    [5.990124, 98.223917],
+    [5.950124, 98.223917],
     icon=DivIcon(
         icon_size=(150,36),
         icon_anchor=(0,0),
-        html='<h5 style="font-family:Georgia Pro Regular;color:silver;">Selat Malaka</h5>',
+        html='<h7 style="font-family:Georgia Pro Regular;color:silver;">Selat Malaka</h7>',
 
         )
     ).add_to(my_map)
@@ -125,7 +161,7 @@ folium.map.Marker(
     icon=DivIcon(
         icon_size=(150,36),
         icon_anchor=(0,0),
-        html='<h5 style="font-family:Georgia Pro Regular;color:silver;">Laut Natuna</h5>',
+        html='<h7 style="font-family:Georgia Pro Regular;color:silver;">Laut Natuna</h7>',
 
         )
     ).add_to(my_map)
@@ -171,7 +207,7 @@ for lat, lon, death, posisi, alive, sumber, cause, tgl in zip(df['lat'], df['lon
                                                   df['penyebab'], df['tanggal']):
     folium.CircleMarker(location=[lat,lon],
                   weight=1,
-                  radius=death,
+                  radius=death*0.3,
                   popup=folium.Popup("<h5><b>Selat Malaka<br>"+
                                      posisi+"<br></b>"+
                                      tgl+"<br></b>"+
