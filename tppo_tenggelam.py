@@ -214,7 +214,7 @@ for lat, lon, death, posisi, alive, sumber, cause, tgl in zip(df['lat'], df['lon
                                      "<br></b>"+
                                      "Sebanyak </b>"+"<b>"+str(death)+"</b>"+
                                      " orang meninggal dunia dan "+"<b>"+str(alive)+"</b>"+" orang selamat, "+
-                                     "sementara penyebab kecelakaan akibat "+str(cause)+".<br>"+
+                                     "sementara penyebab kecelakaan "+str(cause)+".<br>"+
                                      "<br></b>"+
                                      "sumber :&nbsp"+sumber,
                                      max_width=len(f"name= {posisi}")*10),
