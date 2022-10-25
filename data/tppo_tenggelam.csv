@@ -1,28 +1,28 @@
-sumber;tahun;tanggal;jumlah_meninggal;jumlah_selamat;posisi_karam;lon;lat;penyebab
-metroterkini.com;2014;20-Jun;27;55;Kampung Air Hitam, Pulau Carey, Klang, Selangor;101.352798;2.927451;akibat kapal kelebihan muatan
-news.detik.com;2011;02/06/2011;7;17;Perairan Singapura;104.076177;1.257281;akibat kapal kelebihan muatan
-liputan6.com;2010;22/06/2010;7;8;Perairan selat Malaka ,Selangor,Malaysia;101.568214;2.492300;tidak diketahui
-bbc.com;2013;03/08/2013;32;8;Sedeli dan Penawar dekat Tanjung Siang, Kota Tinggi;104.289810;1.911253;akibat gelombang tinggi
-bbc.com;2013;18/07/2013;1;27;Perairan Johor;103.110291;1.506071;tidak diketahui
-okezone.com;2010;22/06/2010;14;8;Port Dickson, Malaysia;101.669910;2.456427;tidak diketahui
-kompas.com;2010;08/02/2010;0;16;Peraian Batam;103.600016;1.071737;akibat kapal kelebihan muatan
-solopos.com;2011;01/06/2011;7;17;perairan Tanjung Ayam, Pengerang ,Johor;104.257299;1.255473;tidak diketahui
-liputan6.com;2009;31/05/2009;12;12;perairan Hiu Kecil, Tanjung Balai Karimun, Kepulauan Riau;103.392199;1.223790;akibat gelombang tinggi
-tempo.com;2016;02/11/2016;60;41;Perairan Tanjung Bemban, Batu Besar Perairan Batam, Provinsi Kepulauan Riau;104.180894;1.196436;akibat badai dan kapal menabrak karang
-batamtoday.com;2016;26/01/2016;23;0;Perairan Pantai Tanjung Kelisa, Mukim Timur Bandar Penawar Selatan, Johor Bahru, Malaysia;104.070137;1.244001;akibat gelombang tinggi
-vica.co.id;2020;22/01/2020;10;10;perairan Tanjung Medang, Kabupaten Bengkalis, Riau;101.495091;2.321583;tidak diketahui
-kompas.com;2008;03/10/2008;12;103;Pelabuhan Teluk Nibung, Tanjung Balai, Sumatera Utara;100.206503;3.269294;tidak diketahui
-kompas.com;2008;30/09/2008;12;137;West port,klang,malaysia;101.021063;2.911644;tidak diketahui
-antaranews.com;2014;18/06/2014;61;31;Kota pantai banting selat malaka;101.314442;2.621653;tidak diketahui
-antaranews.com;2014;17/06/2014;42;55;Sungai air hitam selangor malaysia;100.936669;3.242150;akibat kapal tidak layak
-bbc.com;2015;03/09/2015;63;20;Kota Sabak Bernam di Negara Bagian Selangor;100.664114;3.643557;akibat kapal kelebihan muatan
-kompas.com;2009;12/01/2009;22;16;perairan Peureulak, Aceh Timur;98.610846;5.073218;akibat mesin kapal mati
-asumsi.co.id;2021;25/12/2021;18;35;perairan dekat Johor Baru, Malaysia;102.801245;1.673093;tidak diketahui
-kompas.com;2021;15/12/2021;21;13;perairan Johor Bahru, Malaysia;102.520447;1.756028;tidak diketahui
-merdeka.com;2022;14/01/2022;7;14;perairan Pantai Ketapang, Pulau Rupat Selat Morong, Kabupaten Bengkalis,Riau;101.937754;1.926856;tidak diketahui
-merdeka.com;2022;22/01/2022;1;0;Perairan Kuala Tanjung, Kabupaten Batu Bara;99.908322;3.508300;tidak diketahui
-koranntb.com;2022;16/06/2022;7;23;perairan Pulau Putri, Kecamatan Nongsa, Batam;104.075817;1.220183;tidak diketahui
-kompas.com;2022;19/03/2022;2;89;Perairan Tanjung Api, Kabupaten Asahan, Sumatera Utara;99.864189;3.473816;tidak diketahui
-bbc.com;2014;19/06/2014;35;18;lepas pantai Port Klang, dekat Banting di Selat Malaka;101.219498;2.619031;tidak diketahui
-antaranews.com;2018;02/07/2018;19;25;Perairan Tanjung Balau, Johor, Malaysia;104.481977;1.519206;tidak diketahui
-jpnn.com;2017;23/01/2017;44;8;perairan pantai Tanjung Leman Mersing, Johor, Malaysia;104.193439;2.148665;tidak diketahui
+sumber;tahun;tanggal;jumlah_meninggal;jumlah_selamat;posisi_karam;lon;lat;penyebab;perairan_besar
+metroterkini.com;2014;20-Jun;27;55;Kampung Air Hitam, Pulau Carey, Klang, Selangor;101.352798;2.927451;akibat kapal kelebihan muatan;Selat Malaka
+news.detik.com;2011;02/06/2011;7;17;Perairan Singapura;104.076177;1.257281;akibat kapal kelebihan muatan;Laut Natuna
+liputan6.com;2010;22/06/2010;7;8;Perairan selat Malaka ,Selangor,Malaysia;101.568214;2.492300;tidak diketahui;Selat Malaka
+bbc.com;2013;03/08/2013;32;8;Sedeli dan Penawar dekat Tanjung Siang, Kota Tinggi;104.289810;1.911253;akibat gelombang tinggi;Laut Natuna
+bbc.com;2013;18/07/2013;1;27;Perairan Johor;103.110291;1.506071;tidak diketahui;Selat Malaka
+okezone.com;2010;22/06/2010;14;8;Port Dickson, Malaysia;101.669910;2.456427;tidak diketahui;Selat Malaka
+kompas.com;2010;08/02/2010;0;16;Peraian Batam;103.600016;1.071737;akibat kapal kelebihan muatan;Selat Malaka
+solopos.com;2011;01/06/2011;7;17;perairan Tanjung Ayam, Pengerang ,Johor;104.257299;1.255473;tidak diketahui;Laut Natuna
+liputan6.com;2009;31/05/2009;12;12;perairan Hiu Kecil, Tanjung Balai Karimun, Kepulauan Riau;103.392199;1.223790;akibat gelombang tinggi;Selat Malaka
+tempo.com;2016;02/11/2016;60;41;Perairan Tanjung Bemban, Batu Besar Perairan Batam, Provinsi Kepulauan Riau;104.180894;1.196436;akibat badai dan kapal menabrak karang;Laut Natuna
+batamtoday.com;2016;26/01/2016;23;0;Perairan Pantai Tanjung Kelisa, Mukim Timur Bandar Penawar Selatan, Johor Bahru, Malaysia;104.070137;1.244001;akibat gelombang tinggi;Laut Natuna
+vica.co.id;2020;22/01/2020;10;10;perairan Tanjung Medang, Kabupaten Bengkalis, Riau;101.495091;2.321583;tidak diketahui;Selat Malaka
+kompas.com;2008;03/10/2008;12;103;Pelabuhan Teluk Nibung, Tanjung Balai, Sumatera Utara;100.206503;3.269294;tidak diketahui;Selat Malaka
+kompas.com;2008;30/09/2008;12;137;West port,klang,malaysia;101.021063;2.911644;tidak diketahui;Selat Malaka
+antaranews.com;2014;18/06/2014;61;31;Kota pantai banting selat malaka;101.314442;2.621653;tidak diketahui;Selat Malaka
+antaranews.com;2014;17/06/2014;42;55;Sungai air hitam selangor malaysia;100.936669;3.242150;akibat kapal tidak layak;Selat Malaka
+bbc.com;2015;03/09/2015;63;20;Kota Sabak Bernam di Negara Bagian Selangor;100.664114;3.643557;akibat kapal kelebihan muatan;Selat Malaka
+kompas.com;2009;12/01/2009;22;16;perairan Peureulak, Aceh Timur;98.610846;5.073218;akibat mesin kapal mati;Selat Malaka
+asumsi.co.id;2021;25/12/2021;18;35;perairan dekat Johor Baru, Malaysia;102.801245;1.673093;tidak diketahui;Selat Malaka
+kompas.com;2021;15/12/2021;21;13;perairan Johor Bahru, Malaysia;102.520447;1.756028;tidak diketahui;Selat Malaka
+merdeka.com;2022;14/01/2022;7;14;perairan Pantai Ketapang, Pulau Rupat Selat Morong, Kabupaten Bengkalis,Riau;101.937754;1.926856;tidak diketahui;Selat Malaka
+merdeka.com;2022;22/01/2022;1;0;Perairan Kuala Tanjung, Kabupaten Batu Bara;99.908322;3.508300;tidak diketahui;Selat Malaka
+koranntb.com;2022;16/06/2022;7;23;perairan Pulau Putri, Kecamatan Nongsa, Batam;104.075817;1.220183;tidak diketahui;Laut Natuna
+kompas.com;2022;19/03/2022;2;89;Perairan Tanjung Api, Kabupaten Asahan, Sumatera Utara;99.864189;3.473816;tidak diketahui;Selat Malaka
+bbc.com;2014;19/06/2014;35;18;lepas pantai Port Klang, dekat Banting di Selat Malaka;101.219498;2.619031;tidak diketahui;Selat Malaka
+antaranews.com;2018;02/07/2018;19;25;Perairan Tanjung Balau, Johor, Malaysia;104.481977;1.519206;tidak diketahui;Laut Natuna
+jpnn.com;2017;23/01/2017;44;8;perairan pantai Tanjung Leman Mersing, Johor, Malaysia;104.193439;2.148665;tidak diketahui;Laut Natuna
