@@ -201,14 +201,14 @@ folium.PolyLine(locations = [[0.543961, 103.919291],[0.761225, 105.547874]],
 
 
 # Adding Custom Markers dengan iterating city, lat,lng
-for lat, lon, death, posisi, alive, sumber, cause, tgl in zip(df['lat'], df['lon'], 
+for lat, lon, death, posisi, alive, sumber, cause, tgl, laut in zip(df['lat'], df['lon'], 
                                                   df['jumlah_meninggal'], df['posisi_karam'],
                                                   df['jumlah_selamat'], df['sumber'],
-                                                  df['penyebab'], df['tanggal']):
+                                                  df['penyebab'], df['tanggal'], df['perairan_besar']):
     folium.CircleMarker(location=[lat,lon],
                   weight=1,
                   radius=death*0.3,
-                  popup=folium.Popup("<h5><b>Selat Malaka<br>"+
+                  popup=folium.Popup("<h5><b>"+laut+"<br>"+
                                      posisi+"<br></b>"+
                                      tgl+"<br></b>"+
                                      "<br></b>"+
