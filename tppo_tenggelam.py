@@ -12,7 +12,7 @@ from folium.plugins import FloatImage
 st.set_page_config(layout = 'wide')
 
 # import dataset 
-df = pd.read_csv('D:/dataset_capstonproject/tppo/tppo_tenggelam.csv', sep = ';')
+df = pd.read_csv('data/tppo_tenggelam.csv', sep = ';')
 
 #create folium object
 
