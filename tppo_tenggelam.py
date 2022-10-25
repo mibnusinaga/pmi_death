@@ -12,7 +12,7 @@ from folium.plugins import FloatImage
 st.set_page_config(layout = 'wide')
 
 # import dataset 
-df = pd.read_csv('data/tppo_tenggelam.csv', sep = ';')
+df = pd.read_csv('D:/dataset_capstonproject/tppo/tppo_tenggelam.csv', sep = ';')
 
 #create folium object
 
@@ -55,7 +55,7 @@ folium.map.Marker(
 folium.map.Marker(
     [5.533068, 103.644171],
     icon=DivIcon(
-        icon_size=(650,200),
+        icon_size=(200,0),
         icon_anchor=(0,0),
         html='<h5 style="font-family:Georgia Pro Regular;color:silver;">Tercatat</h5><br>'
         )
@@ -63,7 +63,7 @@ folium.map.Marker(
 folium.map.Marker(
     [5.523068, 103.644171],
     icon=DivIcon(
-        icon_size=(650,200),
+        icon_size=(400,0),
         icon_anchor=(0,0),
         html=
             '''<p style="color:crimson;font-size:70px;font-family:Georgia Pro Regular;">566</p>'''
@@ -72,7 +72,7 @@ folium.map.Marker(
 folium.map.Marker(
     [3.933068, 103.644171],
     icon=DivIcon(
-        icon_size=(650,200),
+        icon_size=(400,0),
         icon_anchor=(0,0),
         html=
             '<h5 style="font-family:Georgia Pro Regular;color:silver;">PMI meninggal</h5>'
@@ -84,7 +84,7 @@ folium.map.Marker(
 folium.map.Marker(
     [7.333068, 86.244171],
     icon=DivIcon(
-        icon_size=(450,200),
+        icon_size=(450,0),
         icon_anchor=(0,0),
         html='<h3 style="font-family:Georgia Pro Regular;color:white;">Kematian Pekerja Migran Ilegal Indonesia di Selat Malaka : Segitiga Bermudanya PMI</h3>'
         )
@@ -92,7 +92,7 @@ folium.map.Marker(
 folium.map.Marker(
     [5.533068, 86.244171],
     icon=DivIcon(
-        icon_size=(650,200),
+        icon_size=(200,0),
         icon_anchor=(0,0),
         html='<p style="font-family:Georgia Pro Regular;color:white;font-size:10px;">Oleh : </hp>'+"<a href="+"https://www.linkedin.com/in/mibnusinaga/"+">M Ibnu Sinaga</a>"
         )
@@ -100,7 +100,7 @@ folium.map.Marker(
 folium.map.Marker(
     [5.200068, 86.244171],
     icon=DivIcon(
-        icon_size=(400,200),
+        icon_size=(400,0),
         icon_anchor=(0,0),
         html=
                 '''<p style="font-family:Georgia Pro Regular;font-size:10px;color:white;">
@@ -120,7 +120,7 @@ folium.map.Marker(
 folium.map.Marker(
     [5.950124, 98.223917],
     icon=DivIcon(
-        icon_size=(150,36),
+        icon_size=(100,0),
         icon_anchor=(0,0),
         html='<h7 style="font-family:Georgia Pro Regular;color:silver;">Selat Malaka</h7>',
 
@@ -129,7 +129,7 @@ folium.map.Marker(
 folium.map.Marker(
     [0.694966, 104.988742],
     icon=DivIcon(
-        icon_size=(150,36),
+        icon_size=(150,0),
         icon_anchor=(0,0),
         html='<h7 style="font-family:Georgia Pro Regular;color:silver;">Laut Natuna</h7>',
 
