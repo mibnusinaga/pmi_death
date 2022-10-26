@@ -21,12 +21,11 @@ my_map = folium.Map(location=[3.1651958, 96.4204231],
 
 folium.TileLayer(
         tiles='https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png',
-        #tiles='https://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}{r}.png',
-        #name='Stamen.TonerBackground',
         attr='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        #attr='Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         subdomains='abcd'
     ).add_to(my_map)
+
+
 
 # grafik
 folium.map.Marker(
@@ -55,7 +54,7 @@ folium.map.Marker(
 folium.map.Marker(
     [5.533068, 103.644171],
     icon=DivIcon(
-        icon_size=(200,0),
+        icon_size=(650,200),
         icon_anchor=(0,0),
         html='<h5 style="font-family:Georgia Pro Regular;color:silver;">Tercatat</h5><br>'
         )
@@ -63,7 +62,7 @@ folium.map.Marker(
 folium.map.Marker(
     [5.523068, 103.644171],
     icon=DivIcon(
-        icon_size=(400,0),
+        icon_size=(650,200),
         icon_anchor=(0,0),
         html=
             '''<p style="color:crimson;font-size:70px;font-family:Georgia Pro Regular;">566</p>'''
@@ -72,7 +71,7 @@ folium.map.Marker(
 folium.map.Marker(
     [3.933068, 103.644171],
     icon=DivIcon(
-        icon_size=(400,0),
+        icon_size=(650,200),
         icon_anchor=(0,0),
         html=
             '<h5 style="font-family:Georgia Pro Regular;color:silver;">PMI meninggal</h5>'
@@ -84,7 +83,7 @@ folium.map.Marker(
 folium.map.Marker(
     [7.333068, 86.244171],
     icon=DivIcon(
-        icon_size=(450,0),
+        icon_size=(450,200),
         icon_anchor=(0,0),
         html='<h3 style="font-family:Georgia Pro Regular;color:white;">Kematian Pekerja Migran Ilegal Indonesia di Selat Malaka : Segitiga Bermudanya PMI</h3>'
         )
@@ -92,15 +91,15 @@ folium.map.Marker(
 folium.map.Marker(
     [5.533068, 86.244171],
     icon=DivIcon(
-        icon_size=(200,0),
+        icon_size=(650,200),
         icon_anchor=(0,0),
-        html='<p style="font-family:Georgia Pro Regular;color:white;font-size:10px;">Oleh : </hp>'+"<a href="+"https://www.linkedin.com/in/mibnusinaga/"+">M Ibnu Sinaga</a>"
+        html='<p style="font-family:Georgia Pro Regular;color:white;font-size:10px;">Oleh : </hp>'+"<a href=https://www.linkedin.com/in/mibnusinaga/ target=_blank>M Ibnu Sinaga</a>"
         )
     ).add_to(my_map)
 folium.map.Marker(
     [5.200068, 86.244171],
     icon=DivIcon(
-        icon_size=(400,0),
+        icon_size=(400,200),
         icon_anchor=(0,0),
         html=
                 '''<p style="font-family:Georgia Pro Regular;font-size:10px;color:white;">
@@ -120,7 +119,7 @@ folium.map.Marker(
 folium.map.Marker(
     [5.950124, 98.223917],
     icon=DivIcon(
-        icon_size=(100,0),
+        icon_size=(150,36),
         icon_anchor=(0,0),
         html='<h7 style="font-family:Georgia Pro Regular;color:silver;">Selat Malaka</h7>',
 
@@ -129,7 +128,7 @@ folium.map.Marker(
 folium.map.Marker(
     [0.694966, 104.988742],
     icon=DivIcon(
-        icon_size=(150,0),
+        icon_size=(150,36),
         icon_anchor=(0,0),
         html='<h7 style="font-family:Georgia Pro Regular;color:silver;">Laut Natuna</h7>',
 
@@ -183,7 +182,7 @@ for lat, lon, death, posisi, alive, sumber, cause, tgl, laut, link in zip(df['la
                                      "sementara penyebab kecelakaan "+str(cause)+".<br>"+
                                      "<br></b>"+
                                      "sumber :&nbsp"+
-                                     "<a href="+link+">"+sumber+"</a>",
+                                     "<a href="+link+" target=_blank>"+sumber+"</a>",
                                      max_width=len(f"name= {posisi}")*10),
                   color='crimson', 
                   fill=True).add_to(my_map)
